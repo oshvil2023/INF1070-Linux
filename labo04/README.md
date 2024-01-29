@@ -6,7 +6,7 @@
 
 - Créez un fichier `bonjour` qui contient « `Bonjour le monde` ».
 
-```
+```sh
 # Il y a pleusieurs options pour creer le fichier.
 # touch, echo, vim, etc.
 echo "Bonjour le monde" > bonjour
@@ -16,26 +16,56 @@ echo "Bonjour le monde" > bonjour
 
 - Quelle est la taille du fichier `bonjour`?
 
-```
+```sh
 # 4eme colonne de la commande `ls -l`
 ```
 
 - Afficher le contenu des fichiers `bonjour` avec la commande `cat`.
 
+```sh
+cat bonjour
+```
+
 - Afficher aussi le numéro d'[inode](https://linoxide.com/linux-command/linux-inode/) du fichier `bonjour` en utilisant la commande  `ls -li` (l'inode 
   est le nombre affiché au début de la ligne).
 
+```sh
+# noeud d'index = inode. chaque fichier a un inode unique.
+# Les inodes contiennent notamment les metadonnees des
+# fichiers (droits d'acces, emplacement, etc.)
+ls -li
+```
+
 - Éditez le fichier `bonjour` pour avoir « `Salut le monde` ».
+
+```sh
+# utiliser un editer un editeur de texte (vim, nano, gedit, etc.)
+nano bonjour
+```
 
 - Qu'affiche maintenant `ls -l` ? Est-ce que la taille du fichier `bonjour` à changé ? Est-ce 
   que la date a changé?
 
+```sh
+# La taille est passee de 17 a 15. Oui, l'heure a change.
+ls -l
+```
+
 - Et si on affiche aussi l'inode avec la commande `ls -li`, est-ce que le numéro a changé?
+
+```sh
+# Non, ca change pas.
+ls -li
+```
 
 ### 1.2 : Renommage, type et extention
 
 - Renommez (suggestion: utilisez la commande `mv`) le fichier `bonjour` en `ave`. 
-
+```sh
+# mv permet normalement de deplacer un fichier dans un emplacement donne
+# mv effectue un renommage si le second argument est dans le meme repertoire.
+mv bonjour ave
+```
 - Qu'affiche maintenant `ls -l` ?
 
 - Selon vous, quel est le type du fichier `ave`?
