@@ -1,3 +1,4 @@
+!!!!!!****olala!
 # Laboratoire 4 : Commandes, fichiers et dossiers
 
 ## Exercice 1 : Fichiers (60 mins)
@@ -14,10 +15,15 @@ echo "Bonjour le monde" > bonjour
 
 - Afficher le contenu du répertoire avec `ls -l`.
 
+```
+-rw-rw-r-- 1 vahid vahid   22 Jan 31 13:57 bonjour
+```
+
 - Quelle est la taille du fichier `bonjour`?
 
 ```sh
-# 4eme colonne de la commande `ls -l`
+# 4eme colonne de la commande `ls -l 
+# 22 octets
 ```
 
 - Afficher le contenu des fichiers `bonjour` avec la commande `cat`.
@@ -47,7 +53,8 @@ nano bonjour
   que la date a changé?
 
 ```sh
-# La taille est passee de 17 a 15. Oui, l'heure a change.
+-rw-rw-r-- 1 vahid vahid   15 Jan 31 14:00 bonjour
+# La taille est passee de 20 a 15. Oui, l'heure a change.
 ls -l
 ```
 
@@ -71,7 +78,9 @@ mv bonjour ave
 - Qu'affiche maintenant `ls -l` ?
 
 - Selon vous, quel est le type du fichier `ave`?
-
+```
+ASCII text
+```
 - En utilisant la commande `file ave`, vérifier le type du fichier.
 
 - Renommez le fichier  `ave` en `ave.png`
