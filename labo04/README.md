@@ -1,4 +1,4 @@
-!!!!!!****olala!
+
 # Laboratoire 4 : Commandes, fichiers et dossiers
 
 ## Exercice 1 : Fichiers (60 mins)
