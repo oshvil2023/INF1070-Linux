@@ -56,20 +56,26 @@ grep "^with" american-english | wc -l
 grep "with$" american-english | wc -l
 ```
 5. Combien de mots terminent par `'s`?
+```sh
+grep "'s"$ word | wc -l
+```
 
 Ensuite, à l'aide de la commande `column` effectuez les actions suivantes:
 
 6. Placez tous les mots qui commencent par la lettre majuscule `T` et placez-les
    dans un fichier nommé `T.txt` en les répartissant sur 4 colonnes.
-   ```
 
+```
 grep "^T" american-english | column -c 64 > T.txt
-   ```
+```
+
 7. Placez tous les noms propres (mots qui commencent par une majuscule) et
    placez-les dans un fichier nommé `noms-propres.txt`. Combien y en a-t-il?
+
 ```
 grep "^[A-Z]" american-english
 ```
+
 ## Exercice 2 : Base de données textuelle (60 mins)
 
 [GeoNames](https://www.geonames.org/) est un projet qui fournit gratuitement
