@@ -166,20 +166,27 @@ cut -f 9 country-clean2.txt | sort | uniq -c
 En utilisant le moins de commandes possibles, répondez aux questions suivantes.
 
 1. Quels sont les fuseaux horaires possibles au Canada? Combien y en a-t-il?
+
 ```
 cut -f 18 CA-clean.txt | grep -v "N/A" | sort -u | wc -l
 ```
+
 2. Quels sont les lieux qui contiennent la chaîne `Longueuil`? Combien y en
    a-t-il?
-   ```
+
+```
 grep Longueuil CA-clean.txt | wc -l
-   ```
+```
+
 3. Quelles sont les données qui ont été modifiées en 2018?
+
 ```
 grep 2018 CA-clean.txt | wc -l
 ```
+
 4. Quelles sont les longitudes minimale et maximale, ainsi que les latitudes
    minimale et maximale des lieux décrits dans le fichier `CA.txt`?
+
 ```
 # longitude maximale
 cut -f 5 CA-clean.txt | sort -u | tail -n 1
@@ -189,6 +196,4 @@ cut -f 5 CA-clean.txt | sort -u | head -n 1
 cut -f 6 CA-clean.txt | sort -u | tail -n 1
 # latitude min
 cut -f 6 CA-clean.txt | sort -u | head -n 1
-
 ```
-
