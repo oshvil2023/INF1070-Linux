@@ -61,11 +61,13 @@ ls -li
 ### 1.2 : Renommage, type et extention
 
 - Renommez (suggestion: utilisez la commande `mv`) le fichier `bonjour` en `ave`. 
+
 ```sh
 # mv permet normalement de deplacer un fichier dans un emplacement donne
 # mv effectue un renommage si le second argument est dans le meme repertoire.
 mv bonjour ave
 ```
+
 - Qu'affiche maintenant `ls -l` ?
 
 - Selon vous, quel est le type du fichier `ave`?
@@ -108,6 +110,10 @@ mv bonjour ave
 ### 1.3 : Copie
 
 - Tapez la commande `cp nuit.txt ave.txt` pour copier  le fichier `nuit.txt`vers `ave.txt`
+```sh
+cp nuit.txt ave.txt
+```
+
 - Afficher les statuts des fichiers `nuit.txt` et  `ave.txt`. Est-ce que les dates 
   sont identiques?
 - En utilisant l'option `-p` de la commande `cp`, copier le fichier `soir.txt` vers 
