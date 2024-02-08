@@ -180,15 +180,15 @@ grep 2018 CA-clean.txt | wc -l
 ```
 4. Quelles sont les longitudes minimale et maximale, ainsi que les latitudes
    minimale et maximale des lieux décrits dans le fichier `CA.txt`?
-   ```
-   # longitude maximale
-   cut -f 5 CA-clean.txt | sort -u | tail -n 1
-   # longitude minimale
-   cut -f 5 CA-clean.txt | sort -u | head -n 1
-   # latitude max
-   cut -f 6 CA-clean.txt | sort -u | tail -n 1
-   # latitude min
-   cut -f 6 CA-clean.txt | sort -u | head -n 1
+```
+# longitude maximale
+cut -f 5 CA-clean.txt | sort -u | tail -n 1
+# longitude minimale
+cut -f 5 CA-clean.txt | sort -u | head -n 1
+# latitude max
+cut -f 6 CA-clean.txt | sort -u | tail -n 1
+# latitude min
+cut -f 6 CA-clean.txt | sort -u | head -n 1
 
-   ```
+```
 
