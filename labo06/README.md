@@ -252,29 +252,23 @@ Solutions:
 ^([a-zA-z]+\s+([\d]+))$
 ```
 #### lecon 13
-```
-```
+
 #### lecon 14
-```
-```
+
 #### lecon 15
-```
-```
+
 
 ## Exercice 3 : `man grep` (15 mins)
 
 - Lancez le manuel de `grep` avec `man grep`. Notez que `man` utilise par
   défaut le paginateur `less` pour lire une page de manuel.
   Note: lancez `man` avec l'option `-LC` pour avoir la page en anglais.
-```
-```
+  
 - Effectuez une recherche (en commençant par `/`) afin trouver la définition de
   l'acronyme PCRE
-```
-```
+
 - Utilisez la touche « `n` » pour chercher les occurences suivantes
-```
-```
+
 - Ensuite, recherchez l'expression `\{n?,?m?\}`. Est-ce que la recherche dans
   `less` suit une convention POSIX?
 ```
