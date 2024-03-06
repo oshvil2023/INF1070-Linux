@@ -14,9 +14,123 @@
 * En particulier, il se peut que vous manquiez certains courriels qui sont mal
   alignés en raison de césures par exemple
 
+  ```
+  grep -iE "[.a-z0-9-]+@" professor.txt
+  ```
+
 ## 2. Expressions régulières simples (40 mins)
 
 Complétez les 15 leçons et les 8 problèmes sur le site https://regexone.com.
+
+lecon 1:
+
+```
+abc
+# ou
+123
+```
+
+lecon 2:
+
+```
+# ... = trois caracteres et \. = le caractere . specifiquement
+...\.
+```
+
+lecon 3:
+
+```
+# Soit c, m, ou f. Apres ces caracteres, an doit obligatoirement figurer
+[cmf]an
+
+# ou 
+# Exclure d, r et p. Mais "an" doit figurer
+[^drp]an
+
+```
+
+lecon 4:
+
+```
+[^b]og
+# ou
+[hd]og
+```
+
+lecon 5:
+
+```
+# Trois caracteres
+# [A-C] pour le premiere caractere
+# [n-p] pour la deuxieme caractere
+# [a-c] pour la troisieme caractere
+[A-C][n-p][a-c]
+```
+
+lecon 6:
+
+```
+waz{3,5}up
+```
+
+
+lecon 7:
+
+```
+aa+b*c+
+```
+
+
+lecon 8:
+
+```
+\d+ files? found\?
+```
+
+
+lecon 9:
+
+```
+\d\.\s+abc
+```
+
+lecon 10:
+
+```
+^Mission: successful$
+```
+
+
+lecon 11:
+
+```
+^(file.+)\.pdf$
+```
+
+
+lecon 12:
+
+```
+(\w+(\d+))
+```
+
+lecon 13:
+
+```
+(\d+)x(\d+)
+```
+
+lecon 14:
+
+```
+I love (cats|dogs)
+```
+
+lecon 15:
+
+```
+.*
+```
 
 ## 3. Mots croisés et expressions régulières (30 mins)
 
