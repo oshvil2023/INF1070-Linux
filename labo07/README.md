@@ -133,12 +133,13 @@ lecon 15:
 ```
 
 Probleme 1:
-  ## peut (ou pas) commencer par un signe negatif
-  ## 1 ou plusieurs chiffres
-  ## suivi optionnellement par une virgule ou plusieurs chiffres
-  ## suivi optionnellement par une composante fractionnelle qui peut etre un point, un ou plusieurs chiffrs
-
+  
   ```
+  # peut (ou pas) commencer par un signe negatif
+  # 1 ou plusieurs chiffres
+  # suivi optionnellement par une virgule ou plusieurs chiffres
+  # suivi optionnellement par une composante fractionnelle qui peut etre un point, un ou plusieurs chiffrs
+
   ^-?\d+(,\d+)*(\.\d+(e\d+)?)?$
   ```
 
@@ -149,9 +150,10 @@ Probleme 1:
   ```
 
   probleme 3:
-  # \w = caracteres alphanumeriques
   
   ```
+  # \w = caracteres alphanumeriques
+  
   ^([\w\.]*)
   ```
 
