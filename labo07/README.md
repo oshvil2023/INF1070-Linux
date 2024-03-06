@@ -132,6 +132,59 @@ lecon 15:
 .*
 ```
 
+Probleme 1:
+  ## peut (ou pas) commencer par un signe negatif
+  ## 1 ou plusieurs chiffres
+  ## suivi optionnellement par une virgule ou plusieurs chiffres
+  ## suivi optionnellement par une composante fractionnelle qui peut etre un point, un ou plusieurs chiffrs
+
+  ```
+  ^-?\d+(,\d+)*(\.\d+(e\d+)?)?$
+  ```
+
+  probleme 2:
+
+  ```
+  (\d{3})
+  ```
+
+  probleme 3:
+  # \w = caracteres alphanumeriques
+  
+  ```
+  ^([\w\.]*)
+  ```
+
+  probleme 4:
+
+  ```
+  <(\w+)
+  ```
+
+  probleme 5:
+  
+  ```
+  (\w+)\.(jpg|png|gif)$
+  ```
+
+  probleme 6:
+  
+  ```
+  ^\s*(.*)\s*$
+  ```
+
+  probleme 7:
+
+  ```
+  (\w+)\(([\w\.]+):(\d+)\)
+  ```
+  
+  probleme 8: 
+  
+  ```
+  (\w+)://([\w\-\.]+)(:(\d+))?
+  ```
+
 ## 3. Mots croisés et expressions régulières (30 mins)
 
 Complétez quelques grilles de « mots croisés » sur le site
